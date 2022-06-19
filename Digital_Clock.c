@@ -9,7 +9,7 @@ int main()
   printf("Set the time (hh:mm:ss) \n");
   scanf("%d %d %d",&h,&m,&s); // hour , minute and second
   system("cls"); // clears the screen for displaying the time
-  while(start!=0)
+  while(start!=0) // start will never be 0 so the loop runs for infinity unless we terminate the output 
   {
     printf("Digital Clock: \n");
     printf("\n");
@@ -32,7 +32,7 @@ int main()
       s++; // we keep on incrementing the second until it becomes 59	
 	}
     Sleep(1000); // pauses the screen for 1 sec
-    system("cls"); // clears the screen after every second so that new time can be printed in the next itertation
+    system("cls"); // clears the screen after every second so that updated time can be printed in the next itertation
   }
   return 0;
 }
